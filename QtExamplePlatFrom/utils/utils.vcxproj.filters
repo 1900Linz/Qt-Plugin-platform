@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{2a42be8b-676b-465f-91e9-a07d4391e175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="setting">
+      <UniqueIdentifier>{3c0a3856-ea77-46ce-99c1-7f71b7c3f744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin">
+      <UniqueIdentifier>{40bc9990-215b-46e7-bfcf-1c2e0a44e1cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils_global.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\generalPluginBasic.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="utils.h">
+      <Filter>utils</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

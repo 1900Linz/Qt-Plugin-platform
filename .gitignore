@@ -7,6 +7,10 @@
 *.o
 *.obj
 
+#vs project files
+*.vcxproj.user
+
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -30,3 +34,7 @@
 *.exe
 *.out
 *.app
+
+#binFloder
+x64/
+.vs/
