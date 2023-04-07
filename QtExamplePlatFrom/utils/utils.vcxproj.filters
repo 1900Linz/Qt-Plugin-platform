@@ -10,6 +10,9 @@
     <Filter Include="plugin">
       <UniqueIdentifier>{40bc9990-215b-46e7-bfcf-1c2e0a44e1cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="others">
+      <UniqueIdentifier>{89d5ad05-68f3-41bd-bf41-d32a66aa21a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils_global.h">
@@ -18,15 +21,27 @@
     <ClInclude Include="plugin\generalPluginBasic.h">
       <Filter>plugin</Filter>
     </ClInclude>
+    <ClInclude Include="Settings\exampleSetting.h">
+      <Filter>setting</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
       <Filter>utils</Filter>
     </ClCompile>
+    <ClCompile Include="others\QDataPool\QDataPoolBasic.cpp">
+      <Filter>others</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings\exampleSetting.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="utils.h">
       <Filter>utils</Filter>
+    </QtMoc>
+    <QtMoc Include="others\QDataPool\QDataPoolBasic.h">
+      <Filter>others</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>

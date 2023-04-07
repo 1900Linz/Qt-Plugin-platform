@@ -3,15 +3,17 @@
 #define UTILS_H
 #pragma once
 
+//#include <functional>
 #include "utils_global.h"
 #include "plugin/generalPluginBasic.h"
-#include <functional>
+#include "others\QDataPool\QDataPoolBasic.h"
 
 using namespace std;
 
 class UTILS_EXPORT utils :
     public QObject,
-    public generalPlugin
+    public generalPlugin,
+    public QDataPoolBasic
 {
     Q_OBJECT
         /*
@@ -24,19 +26,18 @@ class UTILS_EXPORT utils :
 #endif
 
 public:
-    utils();
+    explicit utils(generalPluginTypeEnum plugin_type = WithWidget);
     ~utils();
 
-    void setPluginType(generalPluginTypeEnum plugin_type) Q_DECL_OVERRIDE;
     void getPluginType(generalPluginTypeEnum& plugin_type) Q_DECL_OVERRIDE;
 
     QWidget* getWidgetHandler() Q_DECL_OVERRIDE;
 
-    void setDataReceiveHandler(generalDataReceive fDataRecv) Q_DECL_OVERRIDE;
+    void handleData(QVariant) Q_DECL_OVERRIDE;
 
 private:
     generalPluginTypeEnum _pluginType;
-    generalDataReceive  _fdataRecv;
+//    generalDataReceive  _fdataRecv;
 };
 
 #endif // !UTILS_H

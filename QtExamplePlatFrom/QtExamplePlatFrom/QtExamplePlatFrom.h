@@ -14,9 +14,15 @@ public:
 protected:
     void initMenuActionThings();
 
+    bool loadPluginUtils();
+
     void showConfigPanelWidget();
 private:
     Ui::QtExamplePlatFromClass ui;
 
     QList<QDockWidget*> mItemShowWidgetList;
+
+    QObject* objPluginUtils;
+
+    QWidget* widgetConfigPanel;
 };
