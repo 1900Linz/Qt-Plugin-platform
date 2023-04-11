@@ -7,10 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtExamplePlatFrom", "QtExam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "utils", "utils\utils.vcxproj", "{69723AB9-262D-49E5-82DC-37DC8E5290DD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qmlCanvasDemo", "qmlCanvasDemo\qmlCanvasDemo.vcxproj", "{780C022C-7DA2-4CE1-AC85-1DD397107A21}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qwidgetVideoPlayer", "qwidgetVideoPlayer\qwidgetVideoPlayer.vcxproj", "{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,22 +31,6 @@ Global
 		{69723AB9-262D-49E5-82DC-37DC8E5290DD}.Release|x64.Build.0 = Release|x64
 		{69723AB9-262D-49E5-82DC-37DC8E5290DD}.Release|x86.ActiveCfg = Release|x64
 		{69723AB9-262D-49E5-82DC-37DC8E5290DD}.Release|x86.Build.0 = Release|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Debug|x64.ActiveCfg = Debug|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Debug|x64.Build.0 = Debug|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Debug|x86.ActiveCfg = Debug|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Debug|x86.Build.0 = Debug|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Release|x64.ActiveCfg = Release|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Release|x64.Build.0 = Release|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Release|x86.ActiveCfg = Release|x64
-		{780C022C-7DA2-4CE1-AC85-1DD397107A21}.Release|x86.Build.0 = Release|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Debug|x64.ActiveCfg = Debug|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Debug|x64.Build.0 = Debug|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Debug|x86.ActiveCfg = Debug|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Debug|x86.Build.0 = Debug|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Release|x64.ActiveCfg = Release|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Release|x64.Build.0 = Release|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Release|x86.ActiveCfg = Release|x64
-		{2FEFDE27-EA62-4ABC-8BDF-F1E0B0E34B7D}.Release|x86.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

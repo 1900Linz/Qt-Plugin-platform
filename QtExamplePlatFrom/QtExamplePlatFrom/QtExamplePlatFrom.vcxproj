@@ -32,7 +32,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.15.2_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;quickwidgets;quick</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -60,9 +60,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PostBuildEvent>
-      <Command>Copy "$(SolutionDir)$(SolutionName)\include\dll\*.dll" "$(TargetDir)*.dll";
-Copy "$(SolutionDir)$(SolutionName)\include\lib\*.lib" "$(TargetDir)*.lib";</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories);$(Qt_INCLUDEPATH_)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
@@ -94,10 +97,14 @@ Copy "$(SolutionDir)$(SolutionName)\include\lib\*.lib" "$(TargetDir)*.lib";</Com
     <QtRcc Include="QtExamplePlatFrom.qrc" />
     <QtUic Include="QtExamplePlatFrom.ui" />
     <QtMoc Include="QtExamplePlatFrom.h" />
+    <ClCompile Include="homeWidget.cpp" />
     <ClCompile Include="QtExamplePlatFrom.cpp" />
     <ClCompile Include="main.cpp" />
     <None Include="QtExamplePlatFrom.ico" />
     <ResourceCompile Include="QtExamplePlatFrom.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="homeWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -13,7 +13,7 @@ enum generalPluginTypeEnum
 	WithoutWidget
 };
 
-class generalPlugin {
+class generalPlugin{
 public:
 	virtual ~generalPlugin() {}
 

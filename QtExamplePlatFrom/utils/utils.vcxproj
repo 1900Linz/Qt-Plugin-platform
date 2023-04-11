@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{69723AB9-262D-49E5-82DC-37DC8E5290DD}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
@@ -55,16 +55,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\pugin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PostBuildEvent>
-      <Command>Copy "$(TargetDir)$(ProjectName).lib" "$(SolutionDir)$(SolutionName)\include\lib\$(ProjectName).lib";
-Copy "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)$(SolutionName)\include\dll\$(ProjectName).dll";</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -96,12 +97,9 @@ Copy "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)$(SolutionName)\include\dll
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtMoc Include="others\QDataPool\QDataPoolBasic.h" />
-    <ClInclude Include="plugin\generalPluginBasic.h" />
     <ClInclude Include="Settings\exampleSetting.h" />
     <ClInclude Include="utils_global.h" />
     <QtMoc Include="utils.h" />
-    <ClCompile Include="others\QDataPool\QDataPoolBasic.cpp" />
     <ClCompile Include="Settings\exampleSetting.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>

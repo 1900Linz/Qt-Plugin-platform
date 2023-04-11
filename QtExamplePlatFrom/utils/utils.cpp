@@ -2,8 +2,7 @@
 #include <QMessageBox>
 
 utils::utils(generalPluginTypeEnum plugin_type)
-	: QDataPoolBasic(this)
-	, _pluginType(plugin_type)
+	: _pluginType(plugin_type)
 {
 }
 

@@ -8,6 +8,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QtExamplePlatFrom.cpp" />
+    <ClCompile Include="homeWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="QtExamplePlatFrom.ico">
@@ -31,5 +32,6 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="QtExamplePlatFrom.h" />
+    <QtMoc Include="homeWidget.h" />
   </ItemGroup>
 </Project>
